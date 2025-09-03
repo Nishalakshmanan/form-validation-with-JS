@@ -5,7 +5,7 @@
 }
 body {
   
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,15 +39,16 @@ input[type="password"]::-ms-clear {
 form {
   border: 1px solid rgb(42, 34, 24);
   border-radius: 10px;
-  width: 80%;
+  width: 75%;
   max-width:500px;
   padding: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: rgba(24, 18, 12, 0.516);
+  color:white;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin:10% auto;
 }
 form:hover {
   transform: scale(1.05);
@@ -67,7 +68,7 @@ form div.email input,form div.name input{
   border: 1px solid rgb(42, 34, 24);
   box-shadow: 0 0 5px rgba(24, 18, 12, 0.516);
   border-radius: 0.3em;
-  background-color: transparent;
+  background-color:white;
   outline: none;
   padding: 2.2%;
 }
@@ -77,6 +78,7 @@ form div.email input:hover,form div.name input:hover {
 }
 form div.password,form div.cpassword{
   width:100%;
+  background-color:white;
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -93,13 +95,13 @@ form div.password input,form div.cpassword input{
   width:90%;
   outline:none;
   border:none;
-  background-color: transparent;
+  background-color:white;
   padding: 1.8%;
   flex-grow:1;
 }
 
 form button {
-  color: rgba(24, 18, 12, 0.516);
+  color:white;
   font-weight: bolder;
   margin: 2% auto;
   min-width: 25%;
