@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #181630d9, #352b1fd3);
+}
+/* Chrome, Safari, Edge */
+input[type="password"]::-webkit-password-toggle-button {
+    display: none;
+}
+
+/* Firefox */
+input[type="password"]::-moz-password-toggle {
+    display: none;
+}
+
+/* IE / old Edge */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+.i_error{
+  border:1px solid rgb(96, 13, 13) !important;
+}
+.red{
+  color:rgb(96, 13, 13);
+}
+.green{
+  color:#0B3D0B;
+}
+form {
+  border: 1px solid rgb(42, 34, 24);
+  border-radius: 10px;
+  width: 80%;
+  max-width:500px;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: rgba(24, 18, 12, 0.516);
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px rgba(24, 18, 12, 0.516);
+}
+form div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+form div .error{
+  margin-top:0.1em;
+}
+form div.email input,form div.name input{
+  width:100%;
+  border: 1px solid rgb(42, 34, 24);
+  box-shadow: 0 0 5px rgba(24, 18, 12, 0.516);
+  border-radius: 0.3em;
+  background-color: transparent;
+  outline: none;
+  padding: 2.2%;
+}
+
+form div.email input:hover,form div.name input:hover {
+ box-shadow: 10px 10px rgba(24, 18, 12, 0.516);
+}
+form div.password,form div.cpassword{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgb(42, 34, 24);
+  box-shadow: 0 0 5px rgba(24, 18, 12, 0.516);
+  border-radius: 0.3em;
+  padding:0.4%;
+}
+form div.password:hover,form div.cpassword:hover{
+ box-shadow: 10px 10px rgba(24, 18, 12, 0.516);
+}
+
+form div.password input,form div.cpassword input{
+  width:90%;
+  outline:none;
+  border:none;
+  background-color: transparent;
+  padding: 1.8%;
+  flex-grow:1;
+}
+
+form button {
+  color: rgba(24, 18, 12, 0.516);
+  font-weight: bolder;
+  margin: 2% auto;
+  min-width: 25%;
+  padding: 3%;
+  background-color: transparent;
+  border: 1px solid rgb(42, 34, 24);
+}
+form button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 10px;
+  transform: scale(1.2);
+}
