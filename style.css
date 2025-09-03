@@ -60,6 +60,7 @@ form div{
 }
 form div .error{
   margin-top:0.1em;
+  font-size:0.7em;
 }
 form div.email input,form div.name input{
   width:100%;
@@ -110,4 +111,9 @@ form button {
 form button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 10px;
   transform: scale(1.2);
+}
+@media screen and (max-width:376px){
+  form{
+    min-width:80%;
+  }
 }
